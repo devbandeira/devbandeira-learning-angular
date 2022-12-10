@@ -1,0 +1,5 @@
+<h2>Aprofundando conhecimento em templates!</h2>
+<p>Nome: {{ nome | uppercase}}</p><!-- interpolacao de texto e uso de piper, sequencialmente -->
+<p>Data Nascimento: {{dataNascimento | date:'dd/MM/yyyy'}}</p>
+<img [src]="imagemUrl" width="400px">
+<button type="button" (click)="mostrarDataNascimento()">Click para ver a data de nascimento</button>
