@@ -1,1 +1,19 @@
-<p>rendenrizando-listas works!</p>
+<h2>Renderizando uma lista de dados</h2>
+<ul class="lista-produtos">
+  <!-- Usando a diretiva *ngFor="" -->
+  <!-- *ngFor="let celular of celulares" Para cada celular em celulares vou fazer algo -->
+  <li *ngFor="let celular of celulares">
+    <strong>{{celular.nome}}</strong>
+    <p>{{celular.descricao}}</p>
+    <!-- trabalhando na span com condicional para dizer se esta disponivel ou nao -->
+    <span [ngClass]="celular.esgotado ? 'esgotado' : ''">{{ celular.esgotado ? "esgotado" : "disponivel"}}</span>
+    <p></p>
+  </li>
+</ul>
+<!-- 
+  O status esgotado esta com a cor verde do css aplicado igual a disponivel
+    ent'ao vou usar a DIRETIVA ngClass com um [property binding[] ] para por uma classe se tiver ali com
+    o status esgotado ou disponivel.
+    Criar classe esgotado no CSS tambem
+    Usei o property binding para dizer ali que eu vou atrelar uma classe para disponivel e outra para esgotado
+-->
