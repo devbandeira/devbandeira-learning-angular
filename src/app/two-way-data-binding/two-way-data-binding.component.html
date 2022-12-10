@@ -1,3 +1,9 @@
 <h2>Two Way Data Binding</h2>
 <!-- geralmente utilizado quando estamos preenchendo formularios -->
-<p>{{ nome }}</p>
+<label for="nome">Digite o nome: </label>
+<!-- Observar que para o" Two Way Data Binding, eu tenho um binding de eventos () e um binding de property{} -->
+<!-- Two Way Data Binding "[(ngModel)]= propriedade que meu input esta atrelado nesse caso e o 'nome'" -->
+<input type="text" [(ngModel)] = "nome">
+<!-- Sem passar add o ngModel teremos o seguinte erro "error NG8002: Can't bind to 'ngModel' since it isn't a known property of 'input'." -->
+<!-- Para resolver tenho que ir dentro do meu "app-module.ts" em imports e passar o "FormsModule", pois a propriedade ngModule esta presente nessa lib -->
+<p>Nome digitado: {{ nome }}</p>

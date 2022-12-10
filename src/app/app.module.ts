@@ -9,6 +9,8 @@ import { SegundoComponenteComponent } from './segundo-componente/segundo-compone
 import { MultiplicadorPipe } from './multiplicador.pipe';
 import { PipeCustomizadoComponent } from './pipe-customizado/pipe-customizado.component';
 import { TwoWayDataBindingComponent } from './two-way-data-binding/two-way-data-binding.component';
+import { FormsModule } from '@angular/forms';
+import { RendenrizandoListasComponent } from './rendenrizando-listas/rendenrizando-listas.component';
 
 @NgModule({
   declarations: [
@@ -18,11 +20,13 @@ import { TwoWayDataBindingComponent } from './two-way-data-binding/two-way-data-
     SegundoComponenteComponent,
     MultiplicadorPipe,
     PipeCustomizadoComponent,
-    TwoWayDataBindingComponent
+    TwoWayDataBindingComponent,
+    RendenrizandoListasComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
