@@ -11,6 +11,7 @@ import { PipeCustomizadoComponent } from './pipe-customizado/pipe-customizado.co
 import { TwoWayDataBindingComponent } from './two-way-data-binding/two-way-data-binding.component';
 import { FormsModule } from '@angular/forms';
 import { RendenrizandoListasComponent } from './rendenrizando-listas/rendenrizando-listas.component';
+import { ComponentePersonalizadoComponent } from './componente-personalizado/componente-personalizado.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { RendenrizandoListasComponent } from './rendenrizando-listas/rendenrizan
     MultiplicadorPipe,
     PipeCustomizadoComponent,
     TwoWayDataBindingComponent,
-    RendenrizandoListasComponent
+    RendenrizandoListasComponent,
+    ComponentePersonalizadoComponent
   ],
   imports: [
     BrowserModule,
