@@ -1,0 +1,4 @@
+<h2>Sou o sobrenome do elemento PAI no Elemento filho: {{sobrenome}}</h2>
+<label for="nome">Digite o seu nome aqui: </label>
+<input type="text" [(ngModel)]= "nome">
+<button type="button" (click)="mostrarNome.emit(nome + sobrenome)">CLICK</button>

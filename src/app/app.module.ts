@@ -12,6 +12,10 @@ import { TwoWayDataBindingComponent } from './two-way-data-binding/two-way-data-
 import { FormsModule } from '@angular/forms';
 import { RendenrizandoListasComponent } from './rendenrizando-listas/rendenrizando-listas.component';
 import { ComponentePersonalizadoComponent } from './componente-personalizado/componente-personalizado.component';
+import { ComponentePaiComponent } from './componente-pai/componente-pai.component';
+import { ComponenteFilhoComponent } from './componente-filho/componente-filho.component';
+import { TreinoComponentePaiComponent } from './treino-componente-pai/treino-componente-pai.component';
+import { TreinoComponenteFilhoComponent } from './treino-componente-filho/treino-componente-filho.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +27,11 @@ import { ComponentePersonalizadoComponent } from './componente-personalizado/com
     PipeCustomizadoComponent,
     TwoWayDataBindingComponent,
     RendenrizandoListasComponent,
-    ComponentePersonalizadoComponent
+    ComponentePersonalizadoComponent,
+    ComponentePaiComponent,
+    ComponenteFilhoComponent,
+    TreinoComponentePaiComponent,
+    TreinoComponenteFilhoComponent
   ],
   imports: [
     BrowserModule,

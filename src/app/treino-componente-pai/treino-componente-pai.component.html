@@ -1,0 +1,4 @@
+<h2>Sou o sobrenome do elemento PAI: {{sobrenome}}</h2>
+<h3>Sou o nome do elemento FILHO passado para o PAI: {{filho.nome}}</h3>
+<h3>Sou a juncao do Nome do FILHO e do nome do PAI: {{filho.nome}} {{sobrenome}}</h3>
+<app-treino-componente-filho [sobrenome]="sobrenome" #filho (mostrarNome)="mostrarNomeCompleto($event)"></app-treino-componente-filho>
